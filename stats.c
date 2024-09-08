@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stat.C> 
+ * @brief <ce fichir souce contient la definition des fonctions du logiciel ainsique la fonction principale >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <BAH Thierno Madiou>
+ * @date <08-09-24>
  *
  */
 
@@ -41,3 +41,31 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+
+
+void print_statistics(unsigned char tab[] int n){
+
+}
+
+unsigned char find_median(unsigned char tab[] int n){
+
+}
+
+
+unsigned char find_mean(unsigned char tab[] int n){
+
+}
+
+
+unsigned char find_maximum(unsigned char tab[] int n){
+
+
+}
+
+
+unsigned char find_minimum(unsigned char tab[] int n){
+
+}
+
+
+void sort_array(unsigned char tab[] int n);
