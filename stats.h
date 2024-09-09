@@ -23,7 +23,7 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
-void print_statistics(unsigned char tab[] int n);
+void print_statistics(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet d'affichier les donnes contenues dans le tableau>
@@ -37,9 +37,9 @@ void print_statistics(unsigned char tab[] int n);
  * @return < cette fonctiion ne returne rien>
  */
 
-* Add Your Declarations and Function Comments here */ 
+/* Add Your Declarations and Function Comments here */ 
 
-unsigned char find_median(unsigned char tab[] int n);
+unsigned char find_median(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet de trouver la medianne des donnees dans le tableau et de retourner la valeur>
@@ -53,7 +53,7 @@ unsigned char find_median(unsigned char tab[] int n);
  * @return < cette fonctiion retourne la medianne>
  */
 
-unsigned char find_mean(unsigned char tab[] int n);
+unsigned char find_mean(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet de calculer la moyenne des donnees dans le tableau et de retourner la valeur>
@@ -67,7 +67,7 @@ unsigned char find_mean(unsigned char tab[] int n);
  * @return < cette fonctiion retourne la valeur moyenne des donnees du tableau>
  */
 
-unsigned char find_maximum(unsigned char tab[] int n);
+unsigned char find_maximum(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet de rechercher la valeur maximale dans le tableau et de retourner la valeur>
@@ -82,7 +82,7 @@ unsigned char find_maximum(unsigned char tab[] int n);
  */
 
 
-unsigned char find_minimum(unsigned char tab[] int n);
+unsigned char find_minimum(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet de rechercher la valeur minimale dans le tableau et de retourner la valeur>
@@ -98,7 +98,7 @@ unsigned char find_minimum(unsigned char tab[] int n);
 
 
 
-void sort_array(unsigned char tab[] int n);
+void sort_array(unsigned char tab[], int n);
 
 /**
  * @brief <cette fonction permet de trier les donnnes dans le tableau dans l'orde decroissant>

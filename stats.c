@@ -17,7 +17,7 @@
  * @author <BAH Thierno Madiou>
  * @date <08-09-24>
  *
- */
+ **/
 
 
 
@@ -37,35 +37,76 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  print_statistics(test+8, SIZE-8);
+  sort_array(test,SIZE);
+  printf("tableau trie : \n");
+  for(int i=0; i<SIZE; i++){
+  	printf("tab[%d]\t = %d\n",i+1, test[i]);	
+	}
 
 }
 
 /* Add other Implementation File Code Here */
 
 
-void print_statistics(unsigned char tab[] int n){
+void print_statistics(unsigned char tab[], int n){
+	printf("les statistiques du tableau sont:\n\tmedianne : %d\n\tmoyenne : %d\n\tmaximum : %d\n\tminimum : %d\n",find_median(tab,n),find_mean(tab,n),find_maximum(tab,n),find_minimum(tab,n));
 
 }
 
-unsigned char find_median(unsigned char tab[] int n){
+unsigned char find_median(unsigned char tab[], int n){
+	sort_array(tab, n);
+	if(n%2 == 0)
+		return (tab[n/2] + tab[(n/2)+1])/2;
+	return tab[(n/2)+1];
+}  
 
+
+unsigned char find_mean(unsigned char tab[], int n){
+	int som = 0;
+	for(int i=0; i<n; i++){
+		som += tab[i];
+		
+	}
 }
 
 
-unsigned char find_mean(unsigned char tab[] int n){
+unsigned char find_maximum(unsigned char tab[], int n){
+	int max = tab[0];
 
+	for(int i=0; i< n; i++){
+		if(tab[i] > max){
+			max = tab[i];
+		}
+	}
+	return max;
 }
 
 
-unsigned char find_maximum(unsigned char tab[] int n){
+unsigned char find_minimum(unsigned char tab[], int n){
+	int min = tab[0];
 
-
+	for(int i=0; i< n; i++){
+		
+		if(tab[i] < min){
+			min = tab[i];
+		}
+	}
+	return min;
+	
 }
 
 
-unsigned char find_minimum(unsigned char tab[] int n){
+void sort_array(unsigned char tab[], int n){
+	unsigned char temp;
+	for(int i=0; i<n-1; i++){
+		for(int j = i+1; j<n; j++){
+			if(tab[i] < tab[j]){
+				temp = tab[i];
+				tab[i] = tab[j];
+				tab[j] = temp;
+			}
+		} 
+	}
 
 }
-
-
-void sort_array(unsigned char tab[] int n);
